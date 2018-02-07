@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+	<title>Converter</title>
+	<!-- Link to bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- Link to css -->
+	<link rel="stylesheet" type="text/css" href="converter.css">
+</head>
+<body>
+<div class="container">
+	<h1>Currency Converter</h1>
+	<p id="subtitle">Convert your currency</p>
+
+
+	<form class="form-inline">
+	  <div class="form-group">
+		<input class="form-control" type="number" name="number_input" min="0" placeholder="Amount of money" id="amountInput" required>
+	  </div>
+	  <div class="form-group">
+	    <label for="currency_from">From</label>
+		<select id="currency_from" class="form-control">
+			<option value="PLN">Polish Zloty</option>
+			<option value="GBP">British Pound</option>
+			<option value="EUR">Euro</option>
+		</select>
+	  </div>
+	  <div class="form-group">
+	    <label for="currency_to">To</label>
+		<select id="currency_to" class="form-control" >
+				  <option value="PLN">Polish Zloty</option>
+				  <option value="GBP">British Pound</option>
+				  <option value="EUR">Euro</option>
+		</select>
+	  </div>
+	  <div class="form-group">
+	  	<button id="submit" type="button" class="btn btn-default">Submit</button>
+	  </div>
+	</form>
+
+		
+	<div class="row">
+		<div class="col-lg-12">
+			<p id="display_result"></p>
+		</div>
+	</div>
+</div>
+	
+
+
+
+	
+
+
+
+<script type="text/javascript" src="converter.js"></script>
+</body>
+</html>
